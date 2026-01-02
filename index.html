@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>WOLFOCEAN.J | Futuro Full Stack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #e5e7eb;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      color: #60a5fa;
+    }
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      margin: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    input {
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      margin-top: 10px;
+    }
+    section {
+      margin-top: 40px;
+      padding: 20px;
+      border-top: 1px solid #334155;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hola, soy WOLFOCEAN.J.</h1>
+  <p>Futuro Full Stack Developer</p>
+  <p>Este es mi primer proyecto web 💙
+  <button onclick="alert('¡Gracias por visitar mi web!')">Haz clic aquí</button>
+  <img src="foto.jpg" alt="Foto de WOLFOCEAN.J." style="width:150px; border-radius:50%; margin-top:20px;">
+
+
+  <h3>Salúdame</h3>
+  <input type="text" id="nombre" placeholder="Escribe tu nombre">
+  <br>
+  <button onclick="saludar()">Mostrar saludo</button>
+
+  <p id="mensaje"></p>
+
+  <section>
+    <h2>Mis metas</h2>
+    <ul style="list-style:none; padding:0;">
+      <li>✔ Aprender HTML y CSS</li>
+      <li>✔ Crear mi primera app móvil</li>
+      <li>✔ Conseguir trabajo como junior</li>
+    </ul>
+  </section>
+
+  <script>
+    function saludar() {
+      const nombre = document.getElementById("nombre").value;
+      const mensaje = document.getElementById("mensaje");
+
+      if (nombre === "") {
+        mensaje.textContent = "Por favor escribe tu nombre 🙂";
+      } else {
+        mensaje.textContent = `Bienvenido/a, ${nombre} 💙`;
+      }
+    }
+  </script>
+
+</body>
+</html>
+
